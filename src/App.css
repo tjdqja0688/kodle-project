@@ -1,0 +1,65 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    width: 1024px;
+    margin: 50px auto;
+}
+
+section header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section header div {
+    margin: 0 10px;
+}
+
+.options button {
+    background-color: white;
+    border: none;
+}
+
+.options button svg {
+    width: 20px;
+    height: 20px;
+}
+
+.answer {
+    display: flex;
+    justify-content: center;
+}
+
+.answer-box {
+    margin: 3px 3px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: solid;
+    border-color: lightgray;
+    border-width: 3px;
+    border-radius: 5px;
+}
+
+.keypad {
+    margin-top: 20px;
+}
+
+.keypad .row {
+    display: flex;
+    justify-content: center;
+}
+
+.keypad .row button {
+    margin: 5px 5px;
+    padding: 10px 10px;
+    width: auto;
+    height: 40px;
+    background-color: rgb(226, 220, 220);
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+}
