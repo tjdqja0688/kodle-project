@@ -8,24 +8,41 @@ section {
     margin: 50px auto;
 }
 
+section:focus {
+    outline: none;
+}
+
 section header {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 section header div {
     margin: 0 10px;
+    width: atuo;
+    height: 40px;
+    text-align: center;
+}
+
+.options {
+    display: flex;
+    align-items: center;
 }
 
 .options button {
+    margin: 0 2px;
+    padding: 0;
     background-color: white;
     border: none;
+    z-index: 1000;
 }
 
 .options button svg {
     width: 20px;
     height: 20px;
+    margin: 0 3px;
 }
 
 .answer {
@@ -35,8 +52,8 @@ section header div {
 
 .answer-box {
     margin: 3px 3px;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background-color: white;
     border: solid;
     border-color: lightgray;
@@ -62,4 +79,109 @@ section header div {
     border: none;
     border-radius: 3px;
     font-size: 15px;
+}
+
+.modal-dialog{
+    margin-top: 150px;
+}
+
+.modal-body header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.modal-body header .close {
+    position: absolute;
+    right: 1rem;
+    border-radius: 20px;
+    border-color: black;
+    box-sizing: border-box;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    font-size: 5px;
+}
+
+.modal-body h3 {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.modla-body p {
+    text-align: center;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.modal-body p span {
+    font-weight: bold;
+}
+
+.modal-body .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.modal-body .statistic-ele {
+    text-align: center;
+    width: 120px;
+}
+
+.modal-body .statistic-ele .statistic-value {
+    font-weight: bold;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+.modal-body .statistic-ele .statistic-name {
+    font-size: .75rem;
+    line-height: 1rem;
+}
+
+.modal-body form {
+    padding: 0 20px;
+}
+
+.modal-body form .form-check {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid lightgrey;
+}
+
+.modal-body form .form-check-sub-label {
+    color: grey;
+    font-size: .75rem;
+}
+
+.modal-body form .form-check-input {
+    width: 4.5em;
+    height: 2.5em;
+}
+
+.modal-body form input {
+    float: right;
+}
+
+.answer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.answer div {
+    margin: 2px;
+    border-style: solid;
+    border-color: lightgrey;
+    width: 3.0rem;
+    height: 3.0rem;
+    color: transparent;
+    text-shadow: 0 0 0 #2196f3;
+    font-size: 1.5rem;
+    text-align: center;
 }

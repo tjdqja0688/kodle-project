@@ -8,13 +8,13 @@ export default function Keypad({onClick}) {
     return (
         <div className='keypad'>
             <div className='row'>
-                { firstRow.map((letter, idx)=> <button className='key' key={idx}>{letter}</button>) }
+                { firstRow.map((letter, idx)=> <button className='key' key={idx} onClick={onClick}>{letter}</button>) }
             </div>
             <div className='row'>
-                { secondRow.map((letter, idx)=> <button className='key' key={idx}>{letter}</button>) }
+                { secondRow.map((letter, idx)=> <button className='key' key={idx} onClick={onClick}>{letter}</button>) }
             </div>
             <div className='row'>
-                { thirdRow.map((letter, idx)=> <button className='key' key={idx}>{letter}</button>) }
+                { thirdRow.map((letter, idx)=> <button className='key' key={idx} onClick={onClick}>{letter}</button>) }
             </div>
         </div>
     )
