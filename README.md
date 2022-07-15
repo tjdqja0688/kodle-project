@@ -1,4 +1,4 @@
 # kodle-project
 
 ## 사용된 패키지
-react-bootstrap, react-icons
+react-bootstrap, react-icons, inko
